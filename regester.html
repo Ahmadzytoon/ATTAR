@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTAR JO</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- app css -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+
+
+    <style>
+
+.regester{
+    background-color:  #F2F0EF;
+    padding: 60px 175px;
+}
+.container-reg {
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.container-reg p,label {
+    color: #000000;
+    font-size: 18px;
+}
+.container-reg label {
+    font-weight: bold;
+   
+}
+.container-reg h2 {
+    color: green;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 30px;
+    
+ 
+}
+
+.container-reg a {
+   text-decoration: none;
+   color: var(--gold);
+   margin-right: 5px;
+   font-size: 15px;
+
+ 
+}
+.container-reg a:hover {
+   color: #FF0000;
+ 
+}
+.container-reg form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 50px;
+    /* gap: 6px; */
+    margin: 0;
+    padding-bottom: 20px;
+  
+    
+}
+.container-reg form input[type=email],input[type=password],input[type=text],input[type=number] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+.container-reg form button{
+    width: 50%;
+    padding: 12px;
+    background-color: green;
+font-size: 18px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+
+}
+.container-reg form button:hover{
+    background-color: var(--gold);
+    color: green;
+    transition: all 0.5s;
+}
+@media (max-width:750px){
+    section{
+        background-color:  #F2F0EF;
+        padding: 50px 75px;
+    
+    }
+}
+@media (max-width:500px){
+    .regester{
+        background-color:  #F2F0EF;
+        padding: 10px 20px;
+    
+    }
+    .container-reg form input[type=email],input[type=password],input[type=text],input[type=number] {
+        width: 90%;
+    }
+    .container-reg h2 {
+        font-size: 2em;
+        padding-left: 25px;
+        padding-top: 15px;
+        
+     
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second">
+            <a href="#" class="mb-logo"><img  width="195px" height="65px" src="logo.png" alt=""></a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+            <!-- top header -->
+            <div class="bg-second">
+                <div class="top-header container">
+                    <ul class="devided">
+                        <li>
+                            <a href="#">9626781246+</a>
+                        </li>
+                        <li>
+                            <a href="#">Attarjo@gmail.com</a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="devided">
+                        <li class="dropdown">
+                            <a href="">دينار أردني</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">US</a></li>
+                                <li><a href="#">EUR</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">العربية</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">ENGLISH</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="#">عروض</a></li>
+                    </ul> -->
+                    <ul class="devided">
+                        <li>
+                            <a href="#"> دخول</a>
+                        </li>
+                        <li>
+                            <a href="#">تسجيل</a>
+                        </li>
+                        <li>
+                            <a href="#">عروض</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end top header -->
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="#" class="logo"><img src="logo.png" alt="" width="195px" height="70px" ></a>
+                    <div class="search">
+                        <input type="text" placeholder="بحث ">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                        <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
+                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">الرئيسة</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">منتجاتنا<i class='bx bxs-chevron-down'></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>بهارات وتوابل</h3>
+                                            <ul>
+                                                <li><a href="#">بهارات حب</a></li>
+                                                <li><a href="#">بهارات مطحونة</a></li>
+                                                <li><a href="#">ماجي صحي</a></li>
+                                                <li><a href="#">بهارات مشكلة</a></li>
+                                                <li><a href="#">بهارات كبسة</a></li>
+                                                
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3> عطارة وأعشاب</h3>
+                                            <ul>
+                                                <li><a href="#">زعتر</a></li>
+                                                <li><a href="#">عسل</a></li>
+                                                <li><a href="#">مستكة</a></li>
+                                                <li><a href="#">لبان الذكر</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>تمور</h3>
+                                            <ul>
+                                                <li><a href="#">تمر مجهول</a></li>
+                                                <li><a href="#">تمر ربحي</a></li>
+                                                <li><a href="#">تمر برني</a></li>
+                                                <li><a href="#">تمر سكري</a></li>
+                                                <li><a href="#">تمر مجدول</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>زيوت</h3>
+                                            <ul>
+                                                <li><a href="#">زيوت طبيعية</a></li>
+                                                <li><a href="#">زيوت عطرية</a></li>
+                                                <li><a href="#">خلطات زيوت</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row img-row">
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img  src="./images/خصم-24-ساعة.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img  src="./images/شحن-مجاني.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./images/صفقة-الاسبوع.gif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box" >
+                                            <img  src="./images/عروض-حتى-25.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="#">طلبك الخاص</a></li>
+                        <li><a href="#">مجلة عطارJO</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+<!-- _________________________________________________________end header___________________________________________________________ -->
+
+<section class="regester">
+    <div class="container-reg">
+    <h2> انشاء حساب</h2>
+    <form  action="" method="">
+        <label for="">الأسم الأول</label>
+        <input type="text" name="email" placeholder="">
+        <label for="">الأسم الأخير</label>
+        <input type="text" name="Password">
+        <label for="">رقم الهاتف</label>
+        <input type="number" name="Password">
+        <label for="">الايميل</label>
+        <input type="email" name="Password">
+        <label for="">كلمة السر</label>
+        <input type="password" name="Password">
+        <label for="">اعادة كلمة السر</label>
+        <input type="password" name="Password">
+        <button type="submit">تسجيل</button>
+        <p>هل تملك حساب بالفعل؟<a href="./login.html" >تسجيل دخول</a></p>
+    </form>
+    </div>
+    
+    
+    </section>
+
+
+
+   <!-- __________________________footer___________________________________ -->
+    <!-- footer -->
+    <footer class="bg-second">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="contact">
+                        <h3 class="contact-header">
+                            <img  width="210px" height="80px" src="logo.png" alt="">
+                        </h3>  
+                        <div class="text-footer">
+                       <div> عطار جو متجر متخصص في بيع البهارات والأعشاب
+                        والزيوت الطبيعية والعسل والعطارة
+                        نقدم لكم منتجاتنا بسعر الجمله وبأقل الاسعار</div>
+                </div>
+                        <ul class="contact-socials">
+                            <li><a href="#">
+                                    <i class='bx bxl-facebook-circle'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-instagram-alt'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-youtube'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-twitter'></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                  
+            </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">خريطة الموقع</h3>
+                    <ul class="menu">
+                        <li><a href="#">الرئيسة</a></li>
+                        <li><a href="#">منتجاتنا</a></li>
+                        <li><a href="#">طلبك الخاص</a></li>
+                        <li><a href="#">عروض</a></li>
+                        <li><a href="#">مجلة عطارJO</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">الشركة</h3>
+                    <ul class="menu">
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">الشحن والتوصيل</a></li>
+                        <li><a href="#">الأرجاع والاستبدال</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">تواصل معنا</h3>
+                    <ul class="menu">
+                        <li>
+                           رقم التواصل : <a href="#">9626781246+</a>
+                        </li>
+                        <li>
+                           ايميل : <a href="#">Attarjo@gmail.com</a>
+                        </li>
+            
+                    </ul>
+                </div>
+               
+        </div>
+       <div class="footer2 bg-second">  
+            <li>© 2023 جميع الحقوق محفوظة لموقع عطار jo</li>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="./js/app.js"></script>

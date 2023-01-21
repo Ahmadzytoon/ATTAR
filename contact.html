@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTAR JO</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- app css -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <style>
+        
+        #landpage {
+      width: 100%;
+      height: 60vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)),
+      url(https://burst.shopifycdn.com/photos/contact-us-flatlay.jpg?width=1200&format=pjpg&exif=1&iptc=1);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background-attachment: fixed;
+    }
+    #landpage h1{
+        margin: 30px 0 20px 0;
+        font-size: 55px;
+        font-weight: 700;
+        text-shadow: 2px 1px 5px black;
+        text-transform: uppercase;
+    }
+.line div{
+    margin: 0 0.4rem;
+}
+
+.line div:nth-child(1),
+.line div:nth-child(3) {
+    height: 4px;
+    width: 70px;
+    background: red;
+    border-radius: 5px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+
+}
+
+.line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+}
+
+.text {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.contact_bg .text {
+    margin: 1.6rem 0;
+}
+
+.contact_body {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact_body h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: #07393E;
+    margin: 30px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact_body .line {
+    justify-content: center;
+}
+
+.contact_info {
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    font-family: 'Open Sans', sans-serif;
+}
+.contact_info span {
+ display: block;
+}
+
+.contact_info div {
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact_info span i {
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: var(--green);
+}
+.contact_info div span:nth-child(3) {
+    margin: 0.7rem 0;
+}
+
+.contact_info div span:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.contact_info text {
+    padding-top: 0.4rem;
+    color: #07393E;
+}
+.contact_info span {
+    color: #07393E;
+}
+
+.contact_form {
+    padding: 2rem 0;
+    border-top: 1px solid #c1c1c1;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+.contact_form form {
+    padding-bottom: 1rem;
+}
+.form_control {
+    width: 100%;
+    border : 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 1.3rem 0;
+    font-size: 1rem;
+    outline: 0;
+}
+.form_control:focus {
+    box-shadow: 0 0 9px -3px #07393E;
+}
+
+.send_btn {
+    font-family:'open sans' sans-serif; 
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.send_btn:hover {
+    opacity: 0.8;
+}
+.contact_form div img {
+    width:100%;
+    height: 80vh;
+}
+.contact_form div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.map {
+    width: 95%;
+    height: 60vh;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .contact_body .contact_info {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+@media (max-width: 500px) {
+    .contact_body{
+        margin-top: 80px;
+    }
+    
+
+   
+}
+@media (max-width: 400px) {
+    #landpage h1{
+      font-size: 32px;
+    }
+    .contact_body h2{
+      font-size: 1.75rem;    
+    }
+
+   
+}
+
+    </style>
+</head>
+
+<body>
+
+   <!-- header -->
+   <header>
+    <!-- mobile menu -->
+    <div class="mobile-menu bg-second">
+        <a href="#" class="mb-logo"><img  width="195px" height="65px" src="logo.png" alt=""></a>
+        <span class="mb-menu-toggle" id="mb-menu-toggle">
+            <i class='bx bx-menu'></i>
+        </span>
+    </div>
+    <!-- end mobile menu -->
+    <!-- main header -->
+    <div class="header-wrapper" id="header-wrapper">
+        <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+            <i class='bx bx-x'></i>
+        </span>
+        <!-- top header -->
+        <div class="bg-second">
+            <div class="top-header container">
+                <ul class="devided">
+                    <li>
+                        <a href="#">9626781246+</a>
+                    </li>
+                    <li>
+                        <a href="#">Attarjo@gmail.com</a>
+                    </li>
+                </ul>
+                <!-- <ul class="devided">
+                    <li class="dropdown">
+                        <a href="">دينار أردني</a>
+                        <i class='bx bxs-chevron-down'></i>
+                        <ul class="dropdown-content">
+                            <li><a href="#">US</a></li>
+                            <li><a href="#">EUR</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="">العربية</a>
+                        <i class='bx bxs-chevron-down'></i>
+                        <ul class="dropdown-content">
+                            <li><a href="#">ENGLISH</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">عروض</a></li>
+                </ul> -->
+                <ul class="devided">
+                    <li>
+                        <a href="/login.html"> دخول</a>
+                    </li>
+                    <li>
+                        <a href="/regester.html">تسجيل</a>
+                    </li>
+                    <li>
+                        <a href="#">عروض</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end top header -->
+        <!-- mid header -->
+        <div class="bg-main">
+            <div class="mid-header container">
+                <a href="#" class="logo"><img src="logo.png" alt="" width="195px" height="70px" ></a>
+                <div class="search">
+                    <input type="text" placeholder="بحث ">
+                    <i class='bx bx-search-alt'></i>
+                </div>
+                <ul class="user-menu">
+                    <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                    <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end mid header -->
+        <!-- bottom header -->
+        <div class="bg-second">
+            <div class="bottom-header container">
+                <ul class="main-menu">
+                    <li><a href="./index.html">الرئيسة</a></li>
+                    <!-- mega menu -->
+                    <li class="mega-dropdown">
+                        <a href="./products.html">منتجاتنا<i class='bx bxs-chevron-down'></i></a>
+                        <div class="mega-content">
+                            <div class="row">
+                                <div class="col-3 col-md-12">
+                                    <div class="box">
+                                        <h3>بهارات وتوابل</h3>
+                                        <ul>
+                                            <li><a href="#">بهارات حب</a></li>
+                                            <li><a href="#">بهارات مطحونة</a></li>
+                                            <li><a href="#">ماجي صحي</a></li>
+                                            <li><a href="#">بهارات مشكلة</a></li>
+                                            <li><a href="#">بهارات كبسة</a></li>
+                                            
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-md-12">
+                                    <div class="box">
+                                        <h3> عطارة وأعشاب</h3>
+                                        <ul>
+                                            <li><a href="#">زعتر</a></li>
+                                            <li><a href="#">عسل</a></li>
+                                            <li><a href="#">مستكة</a></li>
+                                            <li><a href="#">لبان الذكر</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-md-12">
+                                    <div class="box">
+                                        <h3>تمور</h3>
+                                        <ul>
+                                            <li><a href="#">تمر مجهول</a></li>
+                                            <li><a href="#">تمر ربحي</a></li>
+                                            <li><a href="#">تمر برني</a></li>
+                                            <li><a href="#">تمر سكري</a></li>
+                                            <li><a href="#">تمر مجدول</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-md-12">
+                                    <div class="box">
+                                        <h3>زيوت</h3>
+                                        <ul>
+                                            <li><a href="#">زيوت طبيعية</a></li>
+                                            <li><a href="#">زيوت عطرية</a></li>
+                                            <li><a href="#">خلطات زيوت</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row img-row">
+                                <div class="col-3">
+                                    <div class="box">
+                                        <img  src="./images/خصم-24-ساعة.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="box">
+                                        <img  src="./images/شحن-مجاني.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="box">
+                                        <img src="./images/صفقة-الاسبوع.gif" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="box" >
+                                        <img  src="./images/عروض-حتى-25.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end mega menu -->
+                    <li><a href="products.html">طلبك الخاص</a></li>
+                    <li><a href="products.html">مجلة عطارJO</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end bottom header -->
+    </div>
+    <!-- end main header -->
+</header>
+<!-- end header -->
+<!-- _________________________________________________________end header___________________________________________________________ -->
+
+<section id="landpage">
+    <h1> تواصل معنا</h1>
+</section>
+</div>
+<section class="contact_section">
+
+
+
+<div class="contact_body">
+    <h2> نحن هنا لمساعدتك</h2>
+            <!-- <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+             </div> -->
+        <div class="contact_info">
+            <div>
+                <span><i class="fa-solid fa-phone"></i></span>
+                <span> رقم الهاتف.</span>
+                <span class="text"> +962 796781246</span>
+            </div>
+
+            <div>
+                <span><i class="fa-solid fa-at"></i></span>
+                <span>  ايميل </span>
+                <span class="text"> ATTAR@gmail.com</span>
+            </div>
+
+            <div>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span> موقعنا </span>
+                <span class="text"> الأردن </span>
+            </div>
+
+            <div>
+                <span><i class="fa-solid fa-calendar"></i></span>
+                <span> Opening Hours</span>
+                <span class="text">  <br></span>
+            </div>
+        </div>
+
+
+        <div class="contact_form">
+            <form action="" method="post">
+                <div>
+                <input type="text"  class="form_control" name="fname" id="fname" placeholder="الأسم الأول" required>
+                <input type="text"  class="form_control" name="lname" id="lname" placeholder="الأسم الأخير" required>
+            </div>
+
+            <div>
+                <input type="email" class="form_control" name="email" id="email" placeholder="الايميل" required>
+                <input type="text" class="form_control" name="phone" id="phone" placeholder="رقم الهاتف" required>
+            </div>
+            <textarea class="form_control" name="message" id="message" cols="30" rows="5" placeholder="الرسالة"></textarea>
+            <input type="submit" class="send_btn" value="ارسال الرسالة">
+            </form>
+
+            <div>
+                <img src="https://www.metropolisindia.com/newdata/images/contact-us.svg" alt="contact us">
+            </div>
+
+        </div>
+    </div>
+<!-- 
+   <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.3794566788406!2d35.00686741138437!3d29.534441875080848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15007110deda62e5%3A0x943e07a599369d37!2z2LnZitin2K_YqSDYp9mE2K_Zg9iq2YjYsdi52KjYr9in2YTZhdis2YrYryDYtNmG2K_ZgiDZhNi32Kgg2KfZhNij2LPZhtin2YY!5e0!3m2!1sen!2sjo!4v1671968113788!5m2!1sen!2sjo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div> -->
+
+</section>
+
+<!-- Scroll to top -->
+<span class="up"> <i class="fa-solid fa-up-long"></i></span>
+<!-- Scroll to top -->
+
+
+
+
+   <!-- __________________________footer___________________________________ -->
+    <!-- footer -->
+    <footer class="bg-second">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="contact">
+                        <h3 class="contact-header">
+                            <img  width="210px" height="80px" src="logo.png" alt="">
+                        </h3>  
+                        <div class="text-footer">
+                       <div> عطار جو متجر متخصص في بيع البهارات والأعشاب
+                        والزيوت الطبيعية والعسل والعطارة
+                        نقدم لكم منتجاتنا بسعر الجمله وبأقل الاسعار</div>
+                </div>
+                        <ul class="contact-socials">
+                            <li><a href="#">
+                                    <i class='bx bxl-facebook-circle'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-instagram-alt'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-youtube'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-twitter'></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                  
+            </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">خريطة الموقع</h3>
+                    <ul class="menu">
+                        <li><a href="#">الرئيسة</a></li>
+                        <li><a href="#">منتجاتنا</a></li>
+                        <li><a href="#">طلبك الخاص</a></li>
+                        <li><a href="#">عروض</a></li>
+                        <li><a href="#">مجلة عطارJO</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">الشركة</h3>
+                    <ul class="menu">
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">الشحن والتوصيل</a></li>
+                        <li><a href="#">الأرجاع والاستبدال</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">تواصل معنا</h3>
+                    <ul class="menu">
+                        <li>
+                           رقم التواصل : <a href="#">9626781246+</a>
+                        </li>
+                        <li>
+                           ايميل : <a href="#">Attarjo@gmail.com</a>
+                        </li>
+            
+                    </ul>
+                </div>
+               
+        </div>
+       <div class="footer2 bg-second">  
+            <li>© 2023 جميع الحقوق محفوظة لموقع عطار jo</li>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="./js/app.js"></script>

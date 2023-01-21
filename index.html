@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTAR JO</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- app css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second">
+            <a href="#" class="mb-logo"><img  width="195px" height="65px" src="logo.png" alt=""></a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+            <!-- top header -->
+            <div class="bg-second">
+                <div class="top-header container">
+                    <ul class="devided">
+                        <li>
+                            <a href="#">9626781246+</a>
+                        </li>
+                        <li>
+                            <a href="#">Attarjo@gmail.com</a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="devided">
+                        <li class="dropdown">
+                            <a href="">دينار أردني</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">US</a></li>
+                                <li><a href="#">EUR</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">العربية</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">ENGLISH</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="#">عروض</a></li>
+                    </ul> -->
+                    <ul class="devided">
+                        <li>
+                            <a href="/login.html"> دخول</a>
+                        </li>
+                        <li>
+                            <a href="/regester.html">تسجيل</a>
+                        </li>
+                        <li>
+                            <a href="#">عروض</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end top header -->
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="#" class="logo"><img src="logo.png" alt="" width="195px" height="70px" ></a>
+                    <div class="search">
+                        <input type="text" placeholder="بحث ">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                        <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
+                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="./index.html">الرئيسة</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">منتجاتنا<i class='bx bxs-chevron-down'></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>بهارات وتوابل</h3>
+                                            <ul>
+                                                <li><a href="#">بهارات حب</a></li>
+                                                <li><a href="#">بهارات مطحونة</a></li>
+                                                <li><a href="#">ماجي صحي</a></li>
+                                                <li><a href="#">بهارات مشكلة</a></li>
+                                                <li><a href="#">بهارات كبسة</a></li>
+                                                
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3> عطارة وأعشاب</h3>
+                                            <ul>
+                                                <li><a href="#">زعتر</a></li>
+                                                <li><a href="#">عسل</a></li>
+                                                <li><a href="#">مستكة</a></li>
+                                                <li><a href="#">لبان الذكر</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>تمور</h3>
+                                            <ul>
+                                                <li><a href="#">تمر مجهول</a></li>
+                                                <li><a href="#">تمر ربحي</a></li>
+                                                <li><a href="#">تمر برني</a></li>
+                                                <li><a href="#">تمر سكري</a></li>
+                                                <li><a href="#">تمر مجدول</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>زيوت</h3>
+                                            <ul>
+                                                <li><a href="#">زيوت طبيعية</a></li>
+                                                <li><a href="#">زيوت عطرية</a></li>
+                                                <li><a href="#">خلطات زيوت</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row img-row">
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img  src="./images/خصم-24-ساعة.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img  src="./images/شحن-مجاني.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./images/صفقة-الاسبوع.gif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box" >
+                                            <img  src="./images/عروض-حتى-25.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="products.html">طلبك الخاص</a></li>
+                        <li><a href="products.html">مجلة عطارJO</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+<!-- _________________________________________________________end header___________________________________________________________ -->
+    <!-- hero section -->
+    <div class="hero" >
+        <div class="slider">
+            <div class="container">
+                <!-- slide item -->
+                <div class="slide active">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                            
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                               أطلب طلباتك الخاصة
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                                         اطلب كل ما تريده من منتجات العطارة والبهارات والأعشاب وبالمقادير يلي بتختارها وسنقوم بتوفيرها وارسالها اينما كنت                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <button class="btn-flat btn-hover">
+                                    <span>سجل طلبك الان</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img top-down">
+                        <!-- <img src="https://www.pngmart.com/files/3/Herbs-PNG-Transparent-Image.png" alt=""> -->
+                    </div>
+                </div>
+                <!-- end slide item -->
+
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                جودة أصلها الطبيعة
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                               
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <button class="btn-flat btn-hover">
+                                    <span>تسوق الان </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img right-left">
+                        <img id="img-slid" src="https://www.seekpng.com/png/detail/948-9486302_mannil-chinese-herbs-png.png" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">عطارJO                             </h2>
+                            <p class="top-down trans-delay-0-4">
+                                أنت بالمكان الصح
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <button class="btn-flat btn-hover">
+                                    <span>تسوق الان</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img left-right">
+                        <img id="img-slid" src="https://ghanemtech.fra1.digitaloceanspaces.com/dlwaqty/179996/5a7d25b0e219b9db0d0482e8b642a378a0aa5ef2.jpg" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+            </div>
+            <!-- slider controller -->
+            <button class="slide-controll slide-next">
+                <i class='bx bxs-chevron-right'></i>
+            </button>
+            <button class="slide-controll slide-prev">
+                <i class='bx bxs-chevron-left'></i>
+            </button>
+            <!-- end slider controller -->
+        </div>
+    </div>
+    <!-- end hero section -->
+<!-- ______________________________________________________________________________________________________ -->
+    <!-- promotion section -->
+    <div class="promotion">
+        <div class="row promotion-new">
+            <div class="col-5 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    
+                    <img src="https://atarh.com/wp-content/uploads/2022/06/%D8%A8%D9%86%D8%B1-%D8%B5%D8%BA%D9%8A%D8%B1-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-5 col-md-12 col-sm-12">
+                <div class="promotion-box">
+    
+                    <img src="https://atarh.com/wp-content/uploads/2022/06/%D8%A8%D9%86%D8%B1-%D8%B5%D8%BA%D9%8A%D8%B1-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end promotion section -->
+<!-- _____________________slider category________________________ -->
+
+
+<div class="reviews" id="reviews">
+    <div class="section-header"><h2 >_تسوق حسب الأقسام_</h2></div>
+    <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="https://www.etaraonline.com/thumbs/400x400/photos/shares/2022/%D8%AA%D9%88%D8%A7%D8%A8%D9%84%20%D9%88%D8%A8%D9%87%D8%A7%D8%B1%D8%A7%D8%AA.jpg" alt="">
+                <h3 id="category">بهارات</h3>
+             
+            </div>
+            <div class="swiper-slide box">
+                <img src="https://www.etaraonline.com/thumbs/400x400/photos/shares/2022/herbs.jpg" alt="">
+                <h3 id="category">عطارة</h3>
+             
+            </div>
+            <div class="swiper-slide box">
+                <img src="https://www.etaraonline.com/thumbs/400x400/photos/shares/2022/test/20/asl3.jpg" alt="">
+                <h3 id="category">عسل</h3>
+             
+            </div>
+            <div class="swiper-slide box">
+                <img src="https://nakhlaty.com/wp-content/uploads/2019/11/%D8%AA%D8%B9%D8%B1%D9%81-%D8%B9%D9%84%D9%89-%D8%B3%D8%A8%D8%B9-%D8%AD%D9%82%D8%A7%D8%A6%D9%82-%D8%B9%D9%86-%D8%AA%D9%85%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%AC%D8%AF%D9%88%D9%84-1000x630.png" alt="">
+                <h3 id="category">تمور</h3>
+             
+            </div>
+            <div class="swiper-slide box">
+                <img src="https://www.etaraonline.com/thumbs/400x400/photos/shares/2022/%D8%B2%D9%8A%D9%88%D8%AA%20%D8%B9%D8%B7%D8%B1%D9%8A%D8%A9.jpg" alt="">
+                <h3 id="category">زيوت طبيعية</h3>
+             
+            </div>
+    
+           
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- _________________   end   slider category________________________ -->
+
+    <!-- product list -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>_وصلنا حديثا_</h2>
+            </div>
+            <div class="row" id="latest-products">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="https://i0.wp.com/atarh.com/wp-content/uploads/2020/04/%D9%81%D9%84%D9%81%D9%84-%D8%A7%D8%B3%D9%88%D8%AF-%D8%A8%D8%B1%D8%A7%D8%B2%D9%8A%D9%84%D9%8A-%D9%85%D8%B7%D8%AD%D9%88%D9%86.jpeg?fit=309%2C309&ssl=1" alt="">
+                            <img src="https://www.pngplay.com/wp-content/uploads/1/Spices-PNG-Download-Free-Image.png" alt="">
+
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <button class="btn-flat btn-hover btn-shop-now">تفاصيل</button>
+                                <button class="btn-flat btn-hover btn-cart-add">
+                                    <i class='bx bxs-cart-add'></i>
+                                </button>
+                                <button class="btn-flat btn-hover btn-cart-add">
+                                    <i class='bx bxs-heart'></i>
+                                </button>
+                            </div>
+                            <div class="product-card-name">
+                      فلفل اسود/125غرام
+                            </div>
+                            <span class="rating">
+                        
+                                <i class='bx bx-star'></i>
+                                <i class='bx bx-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </span>
+                            <div class="product-card-price">
+                                <span><del>JD 2.000</del></span>
+                                <span class="curr-price">JD 1.500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="./products.html" class="btn-flat btn-hover">عرض المزيد</a>
+            </div>
+        </div>
+    </div>
+    <!-- end product list -->
+<!-- _______________________________________________________________________ -->
+    <!-- special product -->
+    <div class="img-land">
+    
+    </div>
+    <!-- end special product -->
+
+    <!-- product list -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>_أفضل العروض_</h2>
+            </div>
+            <div class="row" id="best-products">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="https://i0.wp.com/atarh.com/wp-content/uploads/2020/04/%D9%81%D9%84%D9%81%D9%84-%D8%A7%D8%B3%D9%88%D8%AF-%D8%A8%D8%B1%D8%A7%D8%B2%D9%8A%D9%84%D9%8A-%D9%85%D8%B7%D8%AD%D9%88%D9%86.jpeg?fit=309%2C309&ssl=1" alt="">
+                            <img src="https://www.pngplay.com/wp-content/uploads/1/Spices-PNG-Download-Free-Image.png" alt="">
+
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <button class="btn-flat btn-hover btn-shop-now">تفاصيل</button>
+                                <button class="btn-flat btn-hover btn-cart-add">
+                                    <i class='bx bxs-cart-add'></i>
+                                </button>
+                                <button class="btn-flat btn-hover btn-cart-add">
+                                    <i class='bx bxs-heart'></i>
+                                </button>
+                            </div>
+                            <div class="product-card-name">
+                      فلفل اسود/125غرام
+                            </div>
+                            <span class="rating">
+                        
+                                <i class='bx bx-star'></i>
+                                <i class='bx bx-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </span>
+                            <div class="product-card-price">
+                                <span><del>JD 2.000</del></span>
+                                <span class="curr-price">JD 1.500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="./products.html" class="btn-flat btn-hover">عرض المزيد</a>
+            </div>
+        </div>
+    </div>
+    <!-- end product list -->
+<!-- _____________________________________________- -->
+    <!-- blogs -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>_مجلة ATTAR JO_</h2>
+            </div>
+            <div class="blog">
+                <div class="blog-img">
+                    <img src="https://www.etaraonline.com/photos/shares/2022/s/zbvv.jpg" alt="">
+                </div>
+                <div class="blog-info">
+                    <div class="blog-title">
+                     <h2>  المكملات الغذائية لبشرة مشرقة وشعر صحي</h2> 
+
+                    </div>
+                    <div class="blog-preview">
+                        ما يبني جسمك هو ما تأكله، وما تأكله يمكن أن ينعكس غالباً على بشرتك وشعرك وأظافرك. إذا كنت تأكل الكثير من الأطعمة المصنعة عالية السكر، فقد يؤدي ذلك إلى ظهور حب الشباب وحالة الالتهاب المسببة للشيخوخة المبكرة....                    </div>
+                    <button class="btn-flat btn-hover">قراءة المزيد</button>
+                </div>
+            </div>
+            <div class="blog row-revere">
+                <div class="blog-img">
+                    <img src="https://www.etaraonline.com/photos/shares/2022/s/bnbb.jpg" alt="">
+                </div>
+                <div class="blog-info">
+                    <div class="blog-title">
+                        <h2>   تصميم أفضل روتين صحي لنفسك.</h2> 
+                       
+                    </div>
+                    <div class="blog-preview">
+                        لا توجد طريقة مثالية للتعامل مع الصحة والعافية. محاولة معرفة من أين تبدأ في تجميع روتين العافية الخاص بك يمكن أن يثير لديك الشعور بالإرهاق. تساهم مكونات لا حصر لها في الصحة العقلية والجسدية، لذلك من الضروري تقييم نمط حياتك وأهدافك عند تصميم أفضل روتين صحي لنفسك.                    </div>
+                    <button class="btn-flat btn-hover">اقرأ المزيد</button>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="#" class="btn-flat btn-hover">للمزيد</a>
+            </div>
+        </div>
+    </div>
+    <!-- end blogs -->
+<!-- __________________________footer___________________________________ -->
+    <!-- footer -->
+    <footer class="bg-second">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="contact">
+                        <h3 class="contact-header">
+                            <img  width="210px" height="80px" src="logo.png" alt="">
+                        </h3>  
+                        <div class="text-footer">
+                       <div> عطار جو متجر متخصص في بيع البهارات والأعشاب
+                        والزيوت الطبيعية والعسل والعطارة
+                        نقدم لكم منتجاتنا بسعر الجمله وبأقل الاسعار</div>
+                </div>
+                        <ul class="contact-socials">
+                            <li><a href="#">
+                                    <i class='bx bxl-facebook-circle'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-instagram-alt'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-youtube'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-twitter'></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                  
+            </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">خريطة الموقع</h3>
+                    <ul class="menu">
+                        <li><a href="#">الرئيسة</a></li>
+                        <li><a href="#">منتجاتنا</a></li>
+                        <li><a href="#">طلبك الخاص</a></li>
+                        <li><a href="#">عروض</a></li>
+                        <li><a href="#">مجلة عطارJO</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">الشركة</h3>
+                    <ul class="menu">
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">الشحن والتوصيل</a></li>
+                        <li><a href="#">الأرجاع والاستبدال</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">تواصل معنا</h3>
+                    <ul class="menu">
+                        <li>
+                           رقم التواصل : <a href="#">9626781246+</a>
+                        </li>
+                        <li>
+                           ايميل : <a href="#">Attarjo@gmail.com</a>
+                        </li>
+            
+                    </ul>
+                </div>
+               
+        </div>
+       <div class="footer2 bg-second">  
+            <li>© 2023 جميع الحقوق محفوظة لموقع عطار jo</li>
+        </div>
+    </footer>
+    <!-- end footer -->
+ 
+
+
+
+    <!-- app js -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
